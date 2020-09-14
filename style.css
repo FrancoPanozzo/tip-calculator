@@ -1,0 +1,117 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #dde3fb;
+  color: #0e0c24;
+}
+
+body,
+.container,
+.container > div {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container {
+  padding: 3rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+h1,
+.container > div {
+  margin-bottom: 3rem;
+}
+
+.container > div {
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+.container > div label {
+  margin-bottom: 1.5rem;
+}
+
+.container > div input,
+.container > div select {
+  width: 75%;
+  text-align: center;
+  border: 1px solid #e1e1f5;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+.container > div input:focus,
+.container > div select:focus {
+  font-weight: 400;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  background-color: #5854ff;
+  color: #fdfdff;
+  font-weight: 400;
+  font-size: 1.5rem;
+  transition: all 0.05s ease-in-out;
+}
+
+button:hover {
+  background-color: #504de7;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:active {
+  scale: 0.98;
+}
+
+#target {
+  margin-bottom: 0;
+}
+
+.result {
+  margin-bottom: 3rem;
+  border-top: 1px solid #504de7;
+  border-bottom: 1px solid #504de7;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  background-color: #f3f3ff;
+  font-weight: 400;
+  font-size: 1.5rem;
+  transition: all 0.05s ease-in-out;
+}
+
+#error {
+  border-top: 1px solid #e74d4d;
+  border-bottom: 1px solid #e74d4d;
+  background-color: #ffdbdb;
+}
